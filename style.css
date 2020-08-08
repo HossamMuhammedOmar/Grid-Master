@@ -1,0 +1,95 @@
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.zoon {
+  font-size: 8em;
+  background-color: firebrick;
+  padding: 20px;
+  border: solid 1px rgba(128, 128, 128, 0.63);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.zoon:hover {
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.red {
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0.712),
+    rgba(156, 50, 23, 0.747)
+  );
+}
+
+.yellow {
+  background-image: linear-gradient(
+    rgba(255, 255, 0, 0.664),
+    rgba(223, 204, 29, 0.678)
+  );
+}
+
+.blue {
+  background-image: linear-gradient(
+    rgba(0, 0, 255, 0.685),
+    rgba(45, 78, 168, 0.671)
+  );
+}
+
+.purple {
+  background-image: linear-gradient(
+    rgba(128, 0, 128, 0.699),
+    rgba(196, 71, 221, 0.712)
+  );
+}
+
+.green-white {
+  background-image: linear-gradient(rgba(0, 128, 0, 0.548), rgb(71, 221, 116));
+}
+
+.red-white {
+  background-image: linear-gradient(
+    rgba(158, 12, 102, 0.548),
+    rgb(219, 77, 41)
+  );
+  order: -6;
+}
+
+.green {
+  background-image: linear-gradient(
+    rgba(0, 128, 0, 0.753),
+    rgba(18, 201, 18, 0.63)
+  );
+  /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.yellow-white {
+  background-image: linear-gradient(
+    rgba(136, 161, 44, 0.548),
+    rgb(171, 173, 36)
+  );
+}
+
+.blue-white {
+  background-image: linear-gradient(rgba(49, 26, 153, 0.548), rgb(71, 81, 221));
+}
+
+.purple-white {
+  background-image: linear-gradient(
+    rgba(153, 26, 121, 0.548),
+    rgba(196, 71, 221, 0.568)
+  );
+}
+
+.tst {
+  grid-column: span 2;
+}
